@@ -16,11 +16,11 @@ Skarkify is a startup that wants to analyze song and user activity data that the
 
 ### Tables
 
-**Fact Table:**<br>
+**Fact Table:**
 * **songplays -** songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 Dimension Tables
 
-**Dimension Tables:**<br>
+**Dimension Tables:**
 * **users -** user_id, first_name, last_name, gender, level
 * **songs -** song_id, title, artist_id, year, duration
 * **artists -** artist_id, name, location, latitude, longitude
