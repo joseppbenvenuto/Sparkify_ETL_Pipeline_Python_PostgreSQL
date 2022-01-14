@@ -1,1 +1,1 @@
-# Sparkify_ETL_Pipeline_PostgreSQL
+# Sparkify ETL Pipeline PostgreSQL
