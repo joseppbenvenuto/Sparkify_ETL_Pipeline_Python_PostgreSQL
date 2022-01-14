@@ -1,6 +1,6 @@
 # Sparkify ETL Pipeline PostgreSQL
 
-## Project Description
+## Project Description:
 
 Skarkify is a startup that wants to analyze song and user activity data that they've been collecting on their streaming app. With this initiative in mind a PostgreSQL database was developed in addition to an ETL pipline in Python. 
 
