@@ -4,7 +4,7 @@
 
 Skarkify is a startup that wants to analyze song and user activity data that they've been collecting on their streaming app. With this initiative in mind, a PostgreSQL database was developed in addition to an ETL pipeline in Python. 
 
-## How to Run Pipeline
+## How to Run ETL Pipeline
 
 1) Run create_tables.py to drop all existing tables in the Sparkify database and create new tables. This will be the first step to get the ETL pipeline up and running and will only need to be used afterwards if the project needs to start from scratch while in development.
 2) Run the test.ipynb Jupyter Notebook to test any ETL pipeline work completed.  
