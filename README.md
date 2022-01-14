@@ -1,4 +1,4 @@
-# Sparkify ETL Pipeline PostgreSQL
+# Sparkify ETL Pipeline with Python & PostgreSQL
 
 ## Project Description
 
