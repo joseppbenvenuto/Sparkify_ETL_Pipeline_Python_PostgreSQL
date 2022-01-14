@@ -24,7 +24,7 @@ Dimension Tables
 * **artists -** artist_id, name, location, latitude, longitude
 * **time -** start_time, hour, day, week, month, year, weekday
 
-## Entity Relationships Diagram
+### Entity Relationships Diagram
 
 ![](ReadMe_Images/Entity_Relationship.png)
 
