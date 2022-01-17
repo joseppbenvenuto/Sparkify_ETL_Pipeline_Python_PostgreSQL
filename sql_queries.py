@@ -1,9 +1,9 @@
 # DROP TABLES
-songplay_table_drop = "DROP TABLE songplay;"
-users_table_drop = "DROP TABLE users;"
-song_table_drop = "DROP TABLE song;"
-artist_table_drop = "DROP TABLE artist;"
-time_table_drop = "DROP TABLE time;"
+songplay_table_drop = "DROP TABLE IF NOT EXISTS songplay;"
+users_table_drop = "DROP TABLE IF NOT EXISTS users;"
+song_table_drop = "DROP TABLE IF NOT EXISTS song;"
+artist_table_drop = "DROP TABLE IF NOT EXISTS artist;"
+time_table_drop = "DROP TABLE IF NOT EXISTS time;"
 
 # CREATE TABLES
 # DIMENSION TABLES
