@@ -8,9 +8,9 @@ from sql_queries import *
 # insert single record of song & artist data
 def process_song_file(cur, filepath):
     '''
-    - Processes one JSON file at a time and converts them into data frames. 
+    - Processes one JSON file at a time and converts them into data frames
     - Once JSON file is converted into a data frame it's normalized into second normal form 
-    - The song and artist data frames are inserted into their corresponding tables found in the Sparkify database.
+    - The song and artist data frames are inserted into their corresponding tables found in the Sparkify database
     '''
     # open song file
     df = pd.read_json(filepath, lines = True)
@@ -31,12 +31,12 @@ def process_song_file(cur, filepath):
 # creates & inserts songplay data
 def process_log_file(cur, filepath):
     '''
-     - Processes one JSON file at a time and converts them into data frames.
+     - Processes one JSON file at a time and converts them into data frames
      - The process_log_file function converts data & time data from milliseconds to hours, days, weeks, months, years, and weekdays
-     - The page column is filtered for NextSong. 
+     - The page column is filtered for NextSong
      - From the first data frame, it's normalized into second normal form so that user, time, and fact data are in separate tables
      - Once all three tables are created from the single JASON file processed, they inserted into their corresponding tables in the Sparkify 
-       database.
+       database
     '''
     # open log file
     df = pd.read_json(filepath, lines = True)
@@ -91,8 +91,8 @@ def process_log_file(cur, filepath):
 # process all data
 def process_data(cur, conn, filepath, func):
     '''
-    The process_data functions loops through all data files and applies the process_song_file & process_log_file functions to process and 
-    insert that data into their corresponding tables in the Sparkify database.
+    - The process_data functions loops through all data files and applies the process_song_file & process_log_file functions to process and 
+      insert that data into their corresponding tables in the Sparkify database
     '''
     # get all files matching extension from directory
     all_files = []
@@ -115,8 +115,8 @@ def process_data(cur, conn, filepath, func):
 # run all functions
 def main():
     '''
-    The main function creates the Sparkify database connection and uses the above functions to successfully insert all data to their 
-    corresponding tables in the Sparkify database.
+    - The main function creates the Sparkify database connection and uses the above functions to successfully insert all data to their 
+      corresponding tables in the Sparkify database
     '''
     conn = psycopg2.connect('''host=localhost
                                dbname=sparkifydb
