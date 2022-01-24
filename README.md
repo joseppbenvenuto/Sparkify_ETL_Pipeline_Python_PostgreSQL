@@ -12,7 +12,7 @@ Skarkify is a startup that wants to analyze song and user activity data that the
 
 ## Files & Description
 
-* **test.ipynb -**  Using Python's SQL extension, a script is developed to allow for database testing by viewing created tables.
+* **test.ipynb -**  Using Python's SQL extension, a script is developed to allow for database testing by viewing created tables and queries.
 * **create_tables.py -**  Python script is developed to drop and create tables allowing for flexibility during the ETL pipeline development phase.
 * **etl.ipynb -** A Jupyter notebook containing the first phase of development for Sparkify's ETL pipeline.
 * **etl.py -** Final ETL pipeline script that extracts data from JSON files, transforms the data appropriately to allow for future analysis, and loads the data into Sparkify's database via fact and dimension tables.
